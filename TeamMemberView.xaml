@@ -1,0 +1,11 @@
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:="YourApp.Views.TeamMemberView">
+    <Frame Padding="10" CornerRadius="10" BackgroundColor="LightGray" Margin="5">
+        <StackLayout>
+            <Image Source="{Binding PhotoUrl}" HeightRequest="100" WidthRequest="100"/>
+            <Label Text="{Binding Name}" FontAttributes="Bold" FontSize="18" />
+            <Label Text="{Binding Age, StringFormat='Edad: {0}'}" />
+            <Label Text="{Binding FavoriteSport, StringFormat='Deporte: {0}'}" />
+        </StackLayout>
+    </Frame>
+</ContentView>
